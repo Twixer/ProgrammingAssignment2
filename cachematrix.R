@@ -1,6 +1,6 @@
 ## The following piece of code is composed of two functions : 
 ##   makeCacheMatrix(m=matrix()) : create an object for storing a matrix and its inverse
-##   cacheSolve(x) : a function wich takes an object of type makeCacheMatrix and returns 
+##   cacheSolve(x) : a function wich takes an object created by makeCacheMatrix and returns 
 ##                   the inverse of the matrix in makeCacheMatrix.
 ##
 ## Exemple of use : 
@@ -43,7 +43,7 @@ makeCacheMatrix <- function(m = matrix()) {
 }
 
 cacheSolve <- function(x, ...) {
-    # This function takes an object of class makeCacheMatrix an use it to return
+    # This function takes an object created with makeCacheMatrix an use it to return
     # the inverse of the matrix in makeCacheMatrix.
     #
     # Args : 
